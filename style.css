@@ -25,17 +25,17 @@ body {
 }
 
 .clip1 {
-    background: url("photos/GOPR9159.JPG") center;
+    background: url("./photos/GOPR9159.JPG") center;
     clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
 }
 
 .clip2 {
-    background: url("photos/GOPR9523.JPG") center;
+    background: url("./photos/GOPR9523.JPG") center;
     clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
 }
 
 .clip3 {
-    background: url("photos/GOPR9624.JPG") center;
+    background: url("./photos/GOPR9624.JPG") center;
     clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
 }
 
@@ -45,10 +45,19 @@ body {
     background-position: center;
 }
 
-.container:hover .clip {
+.container:hover .clip2 {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container:hover .clip3 {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
-.container .clip:hover {
+.container .clip1:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.container .clip2:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.container .clip3:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
